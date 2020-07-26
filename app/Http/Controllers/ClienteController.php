@@ -29,12 +29,12 @@ class ClienteController extends Controller
     public function update(Request $request, cliente $cliente)
     {
         $cliente = cliente::updated($request->all());
-        return $cliente;//
+        return $cliente;//hola
     }
 
 
     public function destroy(cliente $cliente)
     {
-        //
+        //hola
     }
 }
