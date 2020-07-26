@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::apiResource("cliente","ClienteController");
+Route::apiResource("cliente","ClienteController")->middleware('cors');
