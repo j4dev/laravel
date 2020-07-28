@@ -10,7 +10,7 @@ class ClienteController extends Controller
     
     public function index()
     {
-    $clientes = cliente::all();
+        $clientes = cliente::all();
       return $clientes;  //
     }
 
