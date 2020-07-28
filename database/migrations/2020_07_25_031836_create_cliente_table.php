@@ -18,6 +18,7 @@ class CreateClienteTable extends Migration
             $table->string('NOMBRE_CLIENTE', 200);
             $table->string('APELLIDO_CLIENTE', 200);
             $table->string('CEDULA_CLIENTE', 200);
+            $table->string('ESTADO',50);
         });
     }
 

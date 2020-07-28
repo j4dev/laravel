@@ -17,8 +17,8 @@ class ClienteController extends Controller
 
     public function store(Request $request)
     {
-        $clientes = cliente::created($request->all());//
-        return $clientes;
+        $cliente= cliente::create($request->all());//
+        return $cliente;
     }
 
     public function show(cliente $cliente)
@@ -26,10 +26,10 @@ class ClienteController extends Controller
         return $cliente;//
     }
 
-    public function update(Request $request, cliente $cliente)
+    public function update(Request $request, cliente $cliup)
     {
-        $cliente = cliente::updated($request->all());
-        return $cliente;//hola
+        $client = $cliup->update($request->all());
+        return $client;//hola
     }
 
 
